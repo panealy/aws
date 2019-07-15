@@ -1,0 +1,36 @@
+{
+  "session": {
+    "attributes": {},
+    "application": {
+      "applicationId": "amzn1.ask.skill.c00e06ef-23c5-494d-9eba-febd4343a3a9"
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "timestamp": "0",
+    "requestId": "foo",
+    "locale": "en-US",
+    "intent": {
+      "name": "MODIFY",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "bed": {
+          "name": "bed",
+          "value": "Master"
+        },
+        "modify_operation": {
+          "value": "set"
+        },
+        "side": {
+          "name": "side",
+          "value": "right"
+        },
+        "setpoint": {
+          "name": "setpoint",
+          "value": "50"
+        }
+      }
+    }
+  }
+}

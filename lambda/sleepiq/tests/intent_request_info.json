@@ -1,0 +1,22 @@
+{
+  "session": {
+    "attributes": {},
+    "application": {
+      "applicationId": "amzn1.ask.skill.c00e06ef-23c5-494d-9eba-febd4343a3a9"
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "timestamp": "0",
+    "requestId": "foo",
+    "locale": "en-US",
+    "intent": {
+      "name": "INFO",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "bed": "Master"
+      }
+    }
+  }
+}
