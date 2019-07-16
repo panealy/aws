@@ -19,41 +19,42 @@ https://medium.com/@manivannan_data/import-custom-python-packages-on-aws-lambda-
 Using the above as a guide, I'm summarized the relevant steps below:
 1. Install Python 3.7 if you haven't already
 
-# sudo pip install python3.7
+`sudo pip install python3.7`
 
 note: AWS as of this writing supports 3.7. This may change over time, so if it
       does, make sure to match their requirements.
 
 2. Install virtualenv on your system (if you don't have it already)
 
-# sudo pip3 install virtualenv
+`sudo pip3 install virtualenv`
 
 3. Create your virtual environment
 
-# virtualenv -p /usr/bin/python3.7 sleepnumber
+`virtualenv -p /usr/bin/python3.7 sleepnumber`
 
 note: based on your distribution, your path above may be different
       (e.g. /usr/local/bin/python3.7)
 
 4. Activate your virtual environment
 
-# source sleepnumber/bin/activate
+`source sleepnumber/bin/activate`
 
 5. Install packages into your virtual environment
 
-# pip3 install sleepyq
+`pip3 install sleepyq`
 
 6. Copy lambda function to your environment's site-packages folder
 
-# cp {path_to}/lambda_function.py sleepnumber/lib/python3.7/site-packages/
+`cp {path_to}/lambda_function.py sleepnumber/lib/python3.7/site-packages/`
 
 7. Zip up everything inside of site-packages (within your venv!)
 
-# cd sleepnumber/lib/python3.7/site-packages
-# zip -r9 sleep_number_lambda.zip *
+```
+cd sleepnumber/lib/python3.7/site-packages
+zip -r9 sleep_number_lambda.zip *
+```
 
 8. Follow steps in the next section to install and activate your function.
-
 
 Integrating sleepiq lambda in your environment
 ----------------------------------------------
