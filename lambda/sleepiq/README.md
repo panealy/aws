@@ -1,4 +1,4 @@
-sleepiq LAMBDA
+# SleepIQ Integration with LAMBDA and Alexa
 
 About Lambda Functions
 ----------------------
