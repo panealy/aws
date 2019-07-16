@@ -81,11 +81,15 @@ ensure nobody will see your password. It's pretty cool.
 
 1. Create a key SNUSER and enter your sleepiq username in for 'Value'
 2. Create a key SNPASS and enter your sleepiq password in for 'Value'
+  Note: The LAMBDA code's comments mention this too, but you don't HAVE to
+        encrypt your USER/PASS. It is a more complex setup, and it costs
+        you small sums of money to do so depending on how often the service 
+        is used due to the NAT Gateway and Key Management Service. If you
+        don't want to encrypt, skip 3-5 and in the code follow the instructions.
 3. Check the 'Enable helpers for encrypting in transit' box.
  note: if you haven't configured KMS before, you'll be told you have to. Take
        care of that in a new window and come back to your lambda function to
        complete your ENV variable setup.
- TODO - need to finish encrypting!!
 4. Once you have your KMS key set up, you can select it in the dropdown.
 5. Use (default) aws/lambda for KMS key to encrypt at rest.
 6. Click Save.
